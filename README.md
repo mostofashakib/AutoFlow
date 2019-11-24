@@ -48,7 +48,7 @@ Which should start up the API service on localhost:3000
 1. Mostofa Adib Shakib
 2. Anthony Lowhur
 3. Bokang Ji.
-4. Aditiya Pethe
+4. Aditya Pethe
 
 # Achievements.
 
