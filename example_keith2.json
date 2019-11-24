@@ -1,0 +1,75 @@
+[
+    {
+        "tag": "action",
+        "api": "twilio",
+        "action": "send",
+        "number" : "9293314794",
+        "body" : "Hey, did we get flights approved?",
+        "response": "none"
+    },
+    {
+        "tag": "action",
+        "api": "twilio",
+        "action" : "recieve",
+        "save" : "true",
+        "response" : "none"
+    },
+    {
+        "tag": "elif",
+        "api": "parser",
+        "action": "parseSentiment",
+        "body" : "#save#",
+        "response": "none",
+        "false": [
+            {
+                "tag": "action",
+                "api": "twilio",
+                "action": "send",
+                "number": "9293314794",
+                "body": "Hey no probs",
+                "response": "none"
+            }
+        ],
+        "true": [
+            {
+                "tag": "action",
+                "api": "slack",
+                "action": "messageUser",
+                "username" : "@Alex Delis",
+                "body": "What are the cost of hotels?",
+                "response": "none"
+            },
+            {
+                "tag": "action",
+                "api": "slack",
+                "action": "recieve",
+                "save": "true",
+                "response": "none"
+            },
+            {
+                "tag": "action",
+                "api": "parser",
+                "action": "extractValue",
+                "body": "#save#",
+                "save": "true",
+                "response": "none"
+            },
+            {
+                "tag": "action",
+                "api": "sheets",
+                "action": "save",
+                "category": "Hotels",
+                "body":"#save#",
+                "response": "none"
+            },
+            {
+                "tag": "action",
+                "api": "twilio",
+                "action": "send",
+                "number" : "9293314794",
+                "body" : "all done!",
+                "response" : "none"
+            }
+        ]
+    }
+]

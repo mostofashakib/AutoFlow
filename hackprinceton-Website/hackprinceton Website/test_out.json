@@ -1,0 +1,24 @@
+{
+    "api": "twilio",
+    "action": "repli",
+    "false": [
+        {
+            "api": "twilio",
+            "action": "text",
+            "body": "what is the total cost of flights",
+            "number": "8328140815"
+        }
+    ],
+    "true": [
+        {
+            "api": "twilio",
+            "action": "send",
+            "body": "what is the total cost of flights",
+            "number": "8328140815"
+        }
+    ],
+    "tag": "elif",
+    "condition": "responded",
+    "response": "none",
+    "save": "true"
+}

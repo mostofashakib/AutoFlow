@@ -1,0 +1,9 @@
+response ended:  results {
+  alternatives {
+    transcript: "send message to boss if he replies on slack then save response into Google doc Ellis create spreadsheet and do calculation and send to boss from there if he does not reply send to coworker"
+    confidence: 0.9468386173248291
+  }
+}
+
+Transcript: send message to boss if he replies on slack then save response into Google doc Ellis create spreadsheet and do calculation and send to boss from there if he does not reply send to coworker
+

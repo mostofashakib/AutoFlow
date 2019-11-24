@@ -1,0 +1,67 @@
+[
+    {
+        "tag": "action",
+        "api": "twilio",
+        "action": "send",
+        "number": 9514551226,
+        "body" : "Hey boss, what did we spend on food for this month's event",
+        "response": "none"
+    },
+    {
+        "tag": "elif",
+        "api": "twilio",
+        "action": "recieve",
+        "delay": "360",
+        "condition": "responded",
+        "response": "none",
+        "save" : "true",
+        "true": [
+            {
+                "tag": "action",
+                "api": "sheet",
+                "action": "insertRow",
+                "body": "#save#",
+                "response": "none"
+            }
+        ],
+        "false": [
+            {
+                "tag": "action",
+                "api": "sheet",
+                "action": "create",
+                "body": "SheetINFO",
+                "response": "none"
+            },
+            {
+                "tag": "action",
+                "api": "twilio",
+                "action": "send",
+                "body": "We created the sheet, check it out boss",
+                "response": "none"
+            },
+            {
+                "tag": "elif",
+                "api": "twilio",
+                "action": "recieve",
+                "Delay": "360",
+                "condition": "responded",
+                "response": "none",
+                "true": [
+                    {
+                        "tag": "action",
+                        "api": "slack",
+                        "action": "message",
+                        "body": "SendTheSheet",
+                        "response": "none"
+                    }
+                ],
+                "false": [
+                    {
+                        "tag": "none",
+                        "response": "none"
+                    }
+                ]
+            }
+        ]
+    }
+]

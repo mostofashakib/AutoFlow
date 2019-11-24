@@ -1,0 +1,5 @@
+https://www.zamzar.com/
+
+Integrate voice recognition
+Do Cosine Simulatiry
+Add bootstrap to site

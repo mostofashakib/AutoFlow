@@ -1,0 +1,30 @@
+{
+  "name": "hackprinceton",
+  "version": "1.0.0",
+  "description": "HackPrinceton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnthedawg/HackPrinceton.git"
+  },
+  "author": "finnthedawg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finnthedawg/HackPrinceton/issues"
+  },
+  "homepage": "https://github.com/finnthedawg/HackPrinceton#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "twilio": "^3.37.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
