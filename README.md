@@ -45,10 +45,10 @@ Which should start up the API service on localhost:3000
 
 
 # Team Members:
-Mostofa Adib Shakib
-Anthony Lowhur
-Bokang Ji.
-Aditiya Pethe
+1. Mostofa Adib Shakib
+2. Anthony Lowhur
+3. Bokang Ji.
+4. Aditiya Pethe
 
 # Achievements.
 
