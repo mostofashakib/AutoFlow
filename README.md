@@ -1,4 +1,4 @@
-# AutoFlow - HackPrinceton  at Princeton University
+# AutoFlow
 
 Autoflow is a personal assistant that allows you to automate your workflow easily through voice commands. 
 
@@ -43,11 +43,10 @@ Then start up the API service
 
 Which should start up the API service on localhost:3000
 
-
 # Team Members:
 1. Mostofa Adib Shakib
 2. Anthony Lowhur
-3. Bokang Ji.
+3. Bokang Jia.
 4. Aditya Pethe
 
 # Achievements.
