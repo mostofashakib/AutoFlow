@@ -6,7 +6,7 @@ Autoflow is a personal assistant that allows you to automate your workflow easil
 
 1. User input is recorded as voice, and through text to speech is converted into a text query.
 2. The text queries are passed through our syntax analyzer which breaks down constituent components.
-3. Each componenet is then passed through our intent parser. This is trained using ntlkt's POS tagging to identify the noun,verb etc.. of each component. 
+3. Each component is then passed through our intent parser. This is trained using ntlkt's POS tagging to identify the noun,verb etc.. of each component. 
 4. After classifying the target API then add this parsed component into a language constructor which builds a specification that can be sent to the dispatcher.
 5. The dispatcher parses the specification and recursively calling relevent APIs, QueryParsers and other endpoints.
 
