@@ -22,7 +22,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.1",
     "express-session": "^1.17.0",
-    "twilio": "^3.37.0"
+    "twilio": "^3.83.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
